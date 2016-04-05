@@ -1,0 +1,37 @@
+{{!< default}}
+<article class="row {{post_class}}" role="main">
+	{{#post}}
+	<header>
+		<h1>{{{title}}}</h1>
+		{{#if author}}
+		<p>Post by {{author.name}}</p>
+		{{/if}}
+		<p class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
+		{{#if tags}}
+		<p class="f-post-tags"><i class="fa fa-tag"></i> {{tags}}</p>
+		{{/if}}
+	</header>
+	<section>
+		{{content}}
+	</section>
+	{{/post}}
+</article>
+<aside class="read-next">
+	{{#next_post}}
+	<a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+		<section class="post">
+			<h2>{{title}}</h2>
+			<p>{{excerpt words="19"}}&hellip;</p>
+		</section>
+	</a>
+	{{/next_post}}
+	{{#prev_post}}
+	<a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+		<section class="post">
+			<h2>{{title}}</h2>
+			<p>{{excerpt words="19"}}&hellip;</p>
+		</section>
+	</a>
+	{{/prev_post}}
+</aside>
+<script>hljs.initHighlightingOnLoad();</script>

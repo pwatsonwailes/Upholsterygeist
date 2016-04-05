@@ -1,0 +1,50 @@
+body { font-size: 0.9em; }
+
+body > article,
+body > section { margin: 0 auto; }
+
+// site header
+body > header {
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 3em;
+	padding: 3em 0;
+
+	h1, p {
+		text-align: center;
+		width: 100%;
+	}
+
+	h1 a { background-image: none; }
+
+	p { margin-bottom: 0; }
+}
+
+// front page article headings
+body > section article h3 a { background-image: none; }
+
+// all articles
+body article {
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 1.6em;
+	padding: 0 2em;
+
+	header {
+		margin-bottom: 1.6em;
+
+	 p {
+		color: #999;
+		margin-bottom: 0.4em;
+		}
+	}
+}
+
+body > nav p,
+body > footer p {
+	text-align: center;
+	width: 100%;
+}
+
+code.hljs span.hljs-tag {
+	display: block;
+	width: 100%;
+}

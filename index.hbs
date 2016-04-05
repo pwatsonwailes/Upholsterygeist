@@ -1,0 +1,22 @@
+{{!< default}}
+<section class="row" role="main">
+	{{#foreach posts}}
+	<article class="{{post_class}}">
+		<header class="post-header">
+			<h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+			{{#if author}}
+			<p>Post by {{author.name}}</p>
+			{{/if}}
+			<p class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
+			{{#if tags}}
+			<p><i class="fa fa-tag"></i> {{tags}}</p>
+			{{/if}}
+		</header>
+		<section class="post-excerpt">
+			<p>{{excerpt}}&hellip;</p>
+		</section>
+	</article>
+	{{/foreach}}
+</section>
+
+{{pagination}}
