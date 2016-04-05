@@ -10,6 +10,7 @@
 		<meta name="author" content="">
 
 		<link rel="stylesheet" type='text/css' href="{{asset "/css/compiled.css"}}"/>
+		<script src="{{asset "/js/functions.js"}}"></script>
 
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
@@ -63,7 +64,10 @@
 		{{ghost_head}}
 	</head>
 	<body class="{{body_class}}">
-		{{! The header }}
+		{{#if @blog.navigation}}
+			{{navigation}}
+		{{/if}}
+
 		<header class="row">
 			{{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
 			<h1><a href="{{@blog.url}}"  alt="Blog Title">{{@blog.title}}</a></h1>
@@ -75,6 +79,7 @@
 		<footer class="row">
 			<p>Theme by <a href="https://wail.es">Pete Wailes</a>. Published with <a class="icon-ghost" href="http://ghost.org">Ghost</a>.</p>
 		</footer>
+
 		{{ghost_foot}}
 	</body>
 </html>

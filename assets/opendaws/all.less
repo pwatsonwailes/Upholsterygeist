@@ -48,3 +48,39 @@ code.hljs span.hljs-tag {
 	display: block;
 	width: 100%;
 }
+
+#menu {
+	background: #eee;
+	bottom: 0;
+	left: -15.625em;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 15.625em;
+	.transform(translate(0px, 0px));
+	.transition(0.5s ease);
+
+	&.active { .transform(translate(15.625em, 0px)); }
+
+	span {
+		.border-radius(5px);
+		background: #eee;
+		color: #999;
+		cursor: pointer;
+		padding: 3px 8px;
+		position: absolute;
+		right: -67px;
+		top: 15px;
+	}
+
+
+	ul {
+		list-style-type: none;
+		margin: 1em 1.4em;
+
+		a {
+			background-image: none;
+			color: #666;
+		}
+	}
+}
