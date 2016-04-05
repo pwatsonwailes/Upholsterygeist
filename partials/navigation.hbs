@@ -1,0 +1,17 @@
+<nav id="menu">
+	<span id="menu-link">Menu</span>
+	<ul class="nav">
+		{{#foreach navigation}}
+		<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+		{{/foreach}}
+	</ul>
+</nav>
+<script>
+onReady(function() {
+	new toggleMode(
+		$('menu'),
+		$('menu-link'),
+		{ activeTriggerClass: 'active', passThrough: false }
+	);
+});
+</script>
