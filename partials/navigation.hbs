@@ -7,11 +7,8 @@
 	</ul>
 </nav>
 <script>
-onReady(function() {
-	new toggleMode(
-		$('menu'),
-		$('menu-link'),
-		{ activeTriggerClass: 'active', passThrough: false }
-	);
+var offsideMenu = offside('#menu', {
+	buttonsSelector: '#menu-link',
+	slidingSide: 'left'
 });
 </script>

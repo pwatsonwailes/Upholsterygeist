@@ -54,13 +54,13 @@ code.hljs span.hljs-tag {
 	bottom: 0;
 	left: -15.625em;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 15.625em;
 	.transform(translate(0px, 0px));
 	.transition(0.5s ease);
 
-	&.active { .transform(translate(15.625em, 0px)); }
+	&.is-open { .transform(translate(15.625em, 0px)); }
 
 	span {
 		.border-radius(5px);
