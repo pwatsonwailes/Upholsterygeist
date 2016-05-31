@@ -83,7 +83,6 @@ code.hljs span.hljs-tag {
 		}
 	}
 
-
 	ul {
 		list-style-type: none;
 		margin: 1em 1.4em;
@@ -94,5 +93,21 @@ code.hljs span.hljs-tag {
 
 			&:hover { color: #000; }
 		}
+	}
+}
+
+.video_container {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+
+	iframe, object, embed {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
 	}
 }
