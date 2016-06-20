@@ -7,7 +7,7 @@ body > section { margin: 0 auto; }
 body > header {
 	border-bottom: 1px dashed #ccc;
 	margin-bottom: 3em;
-	padding: 3em 0;
+	padding: 3.6em 0 3em;
 
 	h1, p {
 		text-align: center;
@@ -52,47 +52,25 @@ code.hljs span.hljs-tag {
 	width: 100%;
 }
 
-#menu {
-	background: #eee;
-	bottom: 0;
-	left: -15.625em;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	width: 15.625em;
-	.transform(translate(0px, 0px));
-	.transition(0.5s ease);
+#menu ul {
+	margin: 1em 1.4em;
+	text-align: right;
+	width: 100%;
 
-	&.is-open { .transform(translate(15.625em, 0px)); }
-
-	span {
-		.border-radius(5px);
-		.box-shadow(5px 5px 1px #fff, -5px -5px 1px #fff);
-		background: #fff;
-		border: 1px solid #aaa;
-		color: #999;
-		cursor: pointer;
-		padding: 3px 8px;
-		position: absolute;
-		right: -67px;
-		top: 15px;
-
-		&:hover {
-			border-color: #67A5D6;
-			color: #67A5D6;
-		}
+	li {
+		display: inline-block;
+		font-family: Raleway,sans-serif;
+		font-size: .75em;
+		letter-spacing: 0.124em;
+		margin: 0 0 0 2rem;
+		padding: 0;
+		text-transform: uppercase;
 	}
 
-	ul {
-		list-style-type: none;
-		margin: 1em 1.4em;
+	a {
+		color: #aaa;
 
-		a {
-			background-image: none;
-			color: #666;
-
-			&:hover { color: #000; }
-		}
+		&:hover { color: #000; }
 	}
 }
 

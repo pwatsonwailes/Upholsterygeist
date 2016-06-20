@@ -1,14 +1,7 @@
 <nav id="menu">
-	<span id="menu-link">Menu</span>
 	<ul class="nav">
 		{{#foreach navigation}}
 		<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
 		{{/foreach}}
 	</ul>
 </nav>
-<script>
-var offsideMenu = offside('#menu', {
-	buttonsSelector: '#menu-link',
-	slidingSide: 'left'
-});
-</script>
