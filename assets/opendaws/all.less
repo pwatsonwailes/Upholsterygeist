@@ -1,12 +1,22 @@
-body { font-size: 0.9em; }
+body {
+	// this gives nicely responsive type, no matter the screen size
+	// don't let this compute when we compile. Bad things happen that way
+	font-size: calc(~"0.55rem + 1vw");
+
+	// auto space things nicely
+	* + * { margin-top: 1.6rem; }
+}
 
 body > article,
-body > section { margin: 0 auto; }
+body > section {
+	margin: 0 auto;
+	max-width: 60rem;
+}
 
 // site header
 body > header {
 	border-bottom: 1px dashed #ccc;
-	margin-bottom: 3em;
+	margin: 0 0 3.2rem; // needs to be in place to override the margin top owl selector and space out the bottom nicely
 	padding: 0 0 3em;
 
 	h1, p {
@@ -28,16 +38,13 @@ body > section article h3 a {
 // all articles
 body article {
 	border-bottom: 1px dotted #ccc;
-	margin-bottom: 1.6em;
 	padding: 0 2em;
 
-	header {
-		margin-bottom: 1.6em;
-
-	 p {
+	header p {
 		color: #999;
-		margin-bottom: 0.4em;
-		}
+		margin-bottom: 0;
+
+		&:last-child { margin-top: 0.4rem }
 	}
 }
 
@@ -94,7 +101,7 @@ code.hljs span.hljs-tag {
 }
 
 #social_buttons {
-	margin-bottom: 2.6rem;
+	margin: 0 0 3.2rem;
 	text-align: center;
 	width: 100%;
 }
@@ -112,12 +119,12 @@ code.hljs span.hljs-tag {
 	&__icon {
 		display: inline-block;
 		fill: none;
-		stroke: #FFF;
+		stroke: #fff;
 
 		/* Solid icons get a fill */
 		&--solid,
 		&--solidcircle {
-			fill: #FFF;
+			fill: #fff;
 			stroke: none;
 		}
 
@@ -183,7 +190,7 @@ code.hljs span.hljs-tag {
 	}
 
 	a {
-		color: #FFF;
+		color: #fff;
 		display: block;
 		text-decoration: none;
 	}
