@@ -107,93 +107,51 @@ code.hljs span.hljs-tag {
 }
 
 .resp-sharing-button {
-	.border-radius(5px);
-	.transition(background-color 25ms ease-out, border-color 25ms ease-out, opacity 250ms ease-out);
-	border-width: 1px;
-	border-style: solid;
-	display: inline-block;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	margin: 0.5rem;
-	padding: 0.5rem 0.65rem;
-
-	&__icon {
-		display: inline-block;
-		fill: none;
-		stroke: #fff;
-
-		/* Solid icons get a fill */
-		&--solid,
-		&--solidcircle {
-			fill: #fff;
-			stroke: none;
-		}
-
-		svg {
-			height: 1rem;
-			position: relative;
-			top: .1rem;
-			width: 1rem;
-		}
-	}
-
-	&--large .resp-sharing-button__icon svg { padding-right: 0.4rem; }
-
-	&__wrapper { display: inline-block; }
+	.transition(background-color 500ms ease-out, border-color 500ms ease-out, opacity 500ms ease-out);
+	background: none;
+	border-radius: 0.5rem;
+	padding: 0.5em 0.75em;
 
 	&__link {
-		background: none;
-		color: #FFF;
+		background-image: none;
+		color: #fff;
+		display: inline-block;
+		margin: 0 0.8rem;
 		text-decoration: none;
+	}
+
+	&__icon svg {
+		fill: #fff;
+		height: 1em;
+		margin-bottom: -0.1em;
+		width: 1em;
 	}
 
 	&--facebook {
 		background-color: #3b5998;
-		border-color: #3b5998;
 
 		&:hover,
-		&:active {
-			background-color: #2d4373;
-			border-color: #2d4373;
-		}
+		&:active { background-color: #2d4373; }
 	}
 
 	&--twitter {
 		background-color: #55acee;
-		border-color: #55acee;
 
 		&:hover,
-		&:active {
-			background-color: #2795e9;
-			border-color: #2795e9;
-		}
-	}
-
-	&--email {
-		background-color: #444444;
-		border-color: #444444;
-
-		&:hover
-		&:active {
-			background-color: #2B2B2B;
-			border-color: #2B2B2B;
-		}
+		&:active { background-color: #2795e9; }
 	}
 
 	&--linkedin {
 		background-color: #0976b4;
-		border-color: #0976b4;
 
 		&:hover,
-		&:active {
-			background-color: #075683;
-			border-color: #075683;
-		}
+		&:active { background-color: #075683; }
 	}
 
-	a {
-		color: #fff;
-		display: block;
-		text-decoration: none;
+	&--email {
+		background-color: #444444;
+
+		&:hover
+		&:active { background-color: #2B2B2B; }
 	}
 }
-
