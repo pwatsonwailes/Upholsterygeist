@@ -154,19 +154,24 @@ code.hljs span.hljs-tag {
 	}
 }
 
-.gallery {
-	position: relative;
+.gallery_widget {
+	width: 100%;
 
-	span {
-		.border-radius(50%);
-		background: #fff;
-		height: 2.5rem;
-		position: absolute;
-		text-align: center;
-		top: 50%;
-		width: 2.5rem;
+	.gallery {
+		position: relative;
+    text-align: center;
+
+		span {
+			.border-radius(50%);
+			background: #fff;
+			height: 2.5rem;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			width: 2.5rem;
+		}
+
+		span#galleryForward { right: 5px; }
+		span#galleryBack { left: 5px; }
 	}
-
-	span#galleryForward { right: 5px; }
-	span#galleryBackward { left: 5px; }
 }
