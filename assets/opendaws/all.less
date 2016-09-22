@@ -153,3 +153,20 @@ code.hljs span.hljs-tag {
 		&:active { background-color: #2B2B2B; }
 	}
 }
+
+.gallery {
+	position: relative;
+
+	span {
+		.border-radius(50%);
+		background: #fff;
+		height: 2.5rem;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 2.5rem;
+	}
+
+	span#galleryForward { right: 5px; }
+	span#galleryBackward { left: 5px; }
+}
