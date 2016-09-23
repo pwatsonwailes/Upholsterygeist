@@ -38,6 +38,22 @@ body article {
 	border-bottom: 1px dotted #ccc;
 	padding: 0 2em;
 
+	&.post {
+		margin-top: 1.6rem;
+
+		.post-excerpt {
+			border-top: none;
+			margin-top: 1.6rem;
+			padding-top: 0;
+		}
+
+		> section {
+			border-top: 1px dotted #ccc;
+			margin-top: 3.2rem;
+			padding-top: 3.2rem;
+		}
+	}
+
 	header p {
 		color: #999;
 		margin-bottom: 0;
@@ -46,11 +62,19 @@ body article {
 	}
 }
 
-body > nav p,
-body > footer p {
-	text-align: center;
-	width: 100%;
+body > nav#pagination,
+body > footer {
+	margin: 1.6rem 0;
+
+	p {
+		margin: 0;
+		text-align: center;
+		width: 100%;
+	}
 }
+
+#pagination p a.newer-posts,
+#pagination p a.older-posts { background-image: none; }
 
 code.hljs span.hljs-tag {
 	display: block;
@@ -99,7 +123,7 @@ code.hljs span.hljs-tag {
 }
 
 #social_buttons {
-	margin: 0 0 1.6em;
+	margin: 0 0 3.2rem;
 	text-align: center;
 	width: 100%;
 }
