@@ -363,11 +363,12 @@ h6 { // 18px / 24px
 }
 
 p, ul, ol, dl, dialog, blockquote, pre, code, address, td, th, label { // 16px / 24px
-  display: block;
   font-size: 1em;
   line-height: @font-line-ratio * 1em;
   margin-bottom: @font-line-ratio * 1em;
 }
+
+p, ul, ol, dl, dialog, blockquote, pre { display: block; }
 
 small, p.small { // 14px / 24px
   font-size: 80%;
