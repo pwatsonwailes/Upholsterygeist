@@ -403,12 +403,21 @@ dfn, em, i { font-style: italic }
 var, address { font-style: normal }
 
 /* Code */
+pre, code { font-family: monospace; }
+
 p code, p pre, p var { line-height: @font-line-ratio * 1em * 0.75; }
 
 pre { // Allow line wrapping of 'pre'
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word
+}
+
+blockquote {
+  border-left: 0.4rem solid #b923e4;
+  color: #888;
+  font-style: italic;
+  padding-left: 1rem;
 }
 
 /* Lists */
