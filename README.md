@@ -1,6 +1,6 @@
 # Upholsterygeist
 
-Upholsterygeist is a minimalist [Ghost](http://www.ghost.org) theme built using [OpenDAWS](https://github.com/Builtvisible/opendaws). My site runs it, so here's a [demo](https://wail.es/).
+Upholsterygeist is a minimalist [Ghost](http://www.ghost.org) theme built using [OpenDAWS](https://github.com/Builtvisible/opendaws). T&C runs a modified version of it known as Minigeist, so here's a [demo](https://toughcompetent.com/) of something similar.
 
 ## Features
 
